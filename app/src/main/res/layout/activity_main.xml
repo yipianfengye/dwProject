@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="用户姓名:"
+            android:gravity="center_vertical"
+            />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/edit_background"
+            android:textCursorDrawable="@drawable/icon_comment_cursor_reply"
+            />
+
+        <Button
+            android:id="@+id/buttonSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="查询"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/edit_background"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearTitle"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <include
+            android:id="@+id/item1"
+            layout="@layout/main_item" />
+
+        <include layout="@layout/main_item" />
+
+        <include layout="@layout/main_item" />
+
+        <include layout="@layout/main_item" />
+
+        <include layout="@layout/main_item" />
+
+        <include layout="@layout/main_item" />
+
+        <include layout="@layout/main_item" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支付总金额：2234.0元"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="去支付"
+                android:background="@drawable/edit_background"
+                android:layout_marginTop="12dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
