@@ -3,6 +3,7 @@ package dw.zm.com.dwproject;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -12,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     Button buttonSearch = null;
     LinearLayout linearContent = null;
     LinearLayout item1 = null;
+    RecyclerView recyclerView = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void initLayoutView() {
         buttonSearch = (Button) findViewById(R.id.buttonSearch);
+        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+
+        recyclerView.setAdapter(new RAdapter());
+
         linearContent = (LinearLayout) findViewById(R.id.linearContent);
         item1 = (LinearLayout) findViewById(R.id.item1);
 
