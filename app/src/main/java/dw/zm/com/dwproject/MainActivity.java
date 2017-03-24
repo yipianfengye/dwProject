@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         initLayoutView();
     }
 
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 linearContent.setVisibility(View.VISIBLE);
             }
         });
+
 
         item1.setOnClickListener(new View.OnClickListener() {
             @Override
